@@ -13,8 +13,27 @@
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="5">
-            <field name="TEXT">Hello World</field>
+          <block type="oled_setend" id="14" inline="true">
+            <value name="ENDX">
+              <block type="math_number" id="15">
+                <field name="NUM">100</field>
+              </block>
+            </value>
+            <value name="ENDY">
+              <block type="math_number" id="16">
+                <field name="NUM">50</field>
+              </block>
+            </value>
+            <next>
+              <block type="oled_linerect" id="25">
+                <field name="OBJECT">RECT</field>
+                <next>
+                  <block type="oled_drawtext" id="5">
+                    <field name="TEXT">go home</field>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
